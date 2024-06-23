@@ -1,7 +1,7 @@
 const womenRingsImageBasePath = "products/Womens/Ring";
 
 $(document).ready(function () {
-    const url = 'http://localhost:8083/WomenProducts.xlsx'; 
+    const url = 'https://app-dk.github.io/sliver-line/WomenProducts.xlsx'; 
     let divName,headerTextContent,imageBasePath;
     fetch(url)
         .then(response => response.arrayBuffer())
@@ -168,7 +168,7 @@ function CreateDynamicDivs(ringRows,divName,headerTextContent,imageBasePath){
     // Iterate over each row in ringRows
     ringRows.forEach(async row => {
         // Fetch the image asynchronously
-        const imgSrc = `http://localhost:8083/${imageBasePath}/${row[1]}`;
+        const imgSrc = `https://app-dk.github.io/sliver-line/${imageBasePath}/${row[1]}`;
         
 
         
