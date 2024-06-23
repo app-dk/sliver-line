@@ -84,7 +84,7 @@ $(document).ready(function () {
             console.error('Error fetching or parsing Excel file:', error);
         });
 
-    const mensUrl ='http://localhost:8083/MensProducts.xlsx'; 
+    const mensUrl ='https://app-dk.github.io/sliver-line/MensProducts.xlsx'; 
     fetch(mensUrl)
         .then(response => response.arrayBuffer())
         .then(buffer=>{
